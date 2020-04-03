@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+		
+		h1{
+			text-align:center; 
+			color:#FFF; 
+			background-color:#000; 
+			border:20px #FFFFFF  groove; 
+			font-size:60px; 
+			font-style:italic
+		}
+		body{
+			background-color:aliceblue
+		}
+		#maq1{
+			text-align:center
+		}
+		#maq2{
+			color:#0CF; 
+			font-size:12px; 
+			border-bottom:3px #999999 dotted;
+   		    border-top:3px #999999 dotted
+		}
+		#acc{
+			 color:#06F; 
+			 font-weight:bolder; 
+			 text-decoration:underline
+		}
+		img{
+			
+			width:450px; 
+			height:200px; 
+			border:3px  #999999 solid
+		}
+		ol{
+			
+			font-size:x-large; 
+			font-weight:bold; 
+			color:#606; 
+			list-style-type:decimal
+		}
+		ul{
+			border:20px #FFFFFF double; 
+			color:#C69; 
+			list-style-type:none; 
+			font-size:large; 
+			font-weight:normal
+			
+		}
+		#divQuiz{
+			
+			font-size:x-large; 
+			font-weight:bold; 
+			color:#606; 
+			height:80vh;
+			border:20px #FFFFFF  groove;
+			width:100%;
+		}

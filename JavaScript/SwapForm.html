@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title> DemoForm </title>
+    <link href="Form.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript">
+	
+	function swap(){
+		var a = parseInt(document.getElementById('tr11').value);
+		var b = parseInt(document.getElementById('tr12').value);
+		
+		document.getElementById('tr21').value = b;
+		document.getElementById('tr22').value = a;
+		
+	}
+	function refresh(){
+		
+		document.getElementById('tr11').value = "";
+		document.getElementById('tr12').value = "";
+		document.getElementById('tr21').value = "";
+		document.getElementById('tr22').value = "";
+		
+		document.getElementById('tr11').focus();	
+	}
+	
+	</script>
+</head>
+
+<body onLoad="document.getElementById('tr11').focus()">
+<form>
+	<table border="1" align="center">
+    	<tr id="maintr">
+        	<th colspan="3" > Swap Form </th>
+        </tr>
+        <tr>
+        	<th colspan="3" class="left"> Before Swapping </th>
+        </tr>
+        <tr>
+        	<th colspan="2"> First Number </th>
+            <td> <input type="text" id="tr11"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Second Number </th>
+            <td> <input type="text" id="tr12"/> </td>
+        </tr>
+        
+        <tr>
+        	<td> <input type="button" value="Swap" onClick="swap()"/> </td>
+        	<td> <input type="button" value="Refresh" onClick="refresh()"/> </td>
+            <td> <input type="button" value="Close" onClick="window.close()"/> </td>
+        </tr>        
+        
+        <tr>
+        	<th colspan="3" class="left"> After Swapping </th>
+        </tr>
+        <tr>
+        	<th colspan="2"> First Number </th>
+            <td> <input type="text" disabled id="tr21"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Second Number </th>
+            <td> <input type="text" disabled id="tr22"/> </td>
+        </tr>        
+    
+	</table>
+</form>
+</body>
+</html>

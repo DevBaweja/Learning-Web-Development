@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title> DemoForm </title>
+      <link href="../../../Users/Lenovo/Desktop/Dreamweaver/Workspace/JavaScript/Form.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript">
+		function refresh() {
+				document.getElementById('raduis').value = "";
+				document.getElementById('res').value = "";
+				document.getElementById('raduis').focus()
+		}
+	</script>
+</head>
+
+<body onLoad="document.getElementById('raduis').focus()">
+<form action="CircleForm.php" method="get">
+	<table border="1" align="center">
+    
+    	<tr id="maintr">
+        	<th colspan="2" > Circle Form </th>
+        </tr>
+        <tr>
+        	<th> Raduis </th>
+            <td> <input type="text" id="raduis" name="raduis"/> </td>
+        </tr>
+        <tr>
+        	<th> Result </th>
+            <td> <input type="text" id="res" disabled name="res"/> </td>
+        </tr>
+        <tr>
+        	<td> <input type="submit" value="Area" name="area"/> </td>
+            <td> <input type="submit" value="Perimeter" name="peri"/> </td>
+        </tr>
+        <tr>
+        	<td> <input type="submit" value="Refresh" onClick="refresh()"/> </td>
+            <td> <input type="submit" value="Close" onClick="window.close()"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

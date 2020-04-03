@@ -1,0 +1,100 @@
+@charset "utf-8";
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+*{
+	margin:0px;	
+	padding:0px;
+	font-family:"Comic Sans MS", cursive;
+}
+body{
+	margin:0px;	
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),  url(../Image/image109.jpg);
+	height:100vh;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+ul{
+	margin:60px;
+	list-style-type:none;
+	float:right;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#FFF;
+	padding:5px 20px;
+	font-weight:bold;
+	border:2px transparent solid;
+	text-shadow:5px 5px 2px #000;
+	margin-right:10px;
+	
+}
+ul li a:hover{
+		background-color:#FFF;
+		color:#000;
+		font-weight:bold;
+		text-shadow:none;
+		transition:all 1s;
+}
+ul li.active a{
+		background-color:#FFF;
+		color:#000;
+		text-shadow:none;
+}
+.logo img{
+		float:left;
+		margin:30px;
+		width:100px;
+		height:100px;
+}
+.logo img:hover{
+	transform:scale(1.75,1.75);
+	transition: transform 1s;
+}
+.main{
+	max-width:1450px;
+	margin:auto;
+	
+}
+.title{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);	
+}
+.title h1{
+	color:#FFF;
+	font-size:60px;
+	font-family:"Courier New", Courier, monospace
+}
+.button{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.button a{
+	margin:10px;
+	border:1px #FFF solid;
+	padding:10px 30px;
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:5px 5px 2px #000;
+}
+.button a:hover{
+		background-color:#FFF;
+		color:#000;
+		font-weight:bold;
+		text-shadow:none;
+		transition:all 1s;
+}
+</style>/* CSS Document */
+

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;	
+}
+body {
+	color:hsla(0,0%,0%,1);
+	position:relative;		
+}
+.article{
+	border:5px double black;
+	float:left;
+	width:55%;
+	margin-left:35px;
+	height:100vh;
+	background-repeat:no-repeat;
+	background-size:65% 90%;
+	background-position:center;
+	position:relative;
+}
+#changeimage{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+    font-size:24px;
+    color:hsla(240,100%,40%,1);
+    letter-spacing:3px;
+    font-family:'Lucida Console', Monaco, monospace;	
+    text-align:center; 
+}
+
+.aside{
+	float:right;
+	width:40%;
+	height:100vh;
+	border:4px hsla(216,100%,50%,1) dashed;
+	position:relative;
+}
+.bgform input[type=file]{
+	position:absolute;
+	top:5%;
+	left:20%;
+	padding:10px;
+	background-color:#777;
+	color:white;
+	font-weight:600;
+	letter-spacing:2px;
+}
+.bgform input[type=submit]{
+	position:absolute;
+	top:15%;
+	left:30%;
+	padding:10px;
+	border:none;
+	color:white;
+	font-weight:600;
+	letter-spacing:2px;
+	background-color:#777;
+}
+.bgform input[type=submit]:hover{
+	background-color:#555;
+}
+.bgform input[type=submit]:last-child{
+	left:55%;
+}
+.bgform p{
+	position:absolute;	
+	top:11.5%;
+	left:30%;
+}
+.aside .image_div{
+	width:95%;
+	position:absolute;
+	top:25%;
+	left:0;
+	height:74vh;
+    margin-left:15px;
+    overflow:scroll;
+	border:2px #777 solid;
+}
+.image_div button {
+	border:none;
+	height:200px;
+	width:165px;
+	margin:10px;
+	position:relative;
+}
+
+.image_div button img{
+	 height:80%;
+	 width:80%	;
+	 position:absolute;
+	 top:50%;
+	 left:50%;
+	 transform:translate(-50%,-50%);
+}
+
+

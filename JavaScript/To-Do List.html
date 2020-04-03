@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<style>
+.mydiv{
+	background-color:black;
+	color:white;
+	height:300px;
+	width:300px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-image:url(../Image/image100.jpg);
+	background-repeat:no-repeat;
+	background-size:80% 80%;
+	background-position:center;
+}
+</style>
+<script>
+function fill(c)
+{
+	document.getElementsByClassName('mydiv').item(0).style.backgroundImage = "url("+c+")";
+}	
+</script>
+</head>
+
+<body>
+<input type="button" onclick="fill('../Image/image101.jpg')" value="click me"/>
+<div class="mydiv">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.challenge {
+  width: 1000px;
+  margin: 30px auto;
+  color: white;
+  font-family: sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 200px 400px 100px;
+      grid-template-rows: 100px 200px 400px 100px;
+  -ms-grid-columns: (1fr)[3] 200px;
+      grid-template-columns: repeat(3, 1fr) 200px;
+  grid-gap: 30px;
+}
+
+.challenge > * {
+  background-color: orangered;
+  padding: 20px;
+}
+
+.header {
+  grid-column: 1 / -1;
+}
+
+.main-content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+}
+
+.sidebar {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+/*# sourceMappingURL=GridLineNumbers.css.map */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2,h1{
+            background-color: #f1425d;
+            color: #fff;
+            padding: 10px;
+            display:inline-block;
+        }
+        h1{
+            display: block;
+            text-align: center;
+        }
+        h2:not(:last-child)
+        {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .container{
+            background-color:#ccc;
+            padding: 10px;
+            display:flex;
+            flex-direction: row;
+            align-content: center;
+        }
+        .c1{
+            justify-content: flex-start;
+        }
+        .c2{
+            justify-content: flex-end;
+        }
+        .c3{
+            justify-content:center;
+        }
+        .c4{
+            justify-content:space-between;
+        }
+        .c5{
+            justify-content:space-around;
+        }
+        .c6{
+            justify-content: space-evenly;
+        }
+        .item{
+            background-color:#f1425d;
+            padding:10px;
+            font-size:20px;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <h1> Justify-Content along main axis </h1>
+    <h2> Flex-Start </h2>
+    <div class="container c1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+    <h2> Flex-End </h2>
+    <div class="container c2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+    <h2> Center </h2>
+    <div class="container c3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h2> Space-Between </h2>
+    <div class="container c4">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+    <h2> Space-Around </h2>
+    <div class="container c5">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+    <h2> Space-Evenly </h2>
+    <div class="container c6">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+</body>
+</html>

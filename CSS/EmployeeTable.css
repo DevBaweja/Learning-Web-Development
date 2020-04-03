@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+		table{	
+				font-size:22px;
+				font-family:"Comic Sans MS", cursive;	
+				height:800px; 
+				width:750px; 
+				color:#FFF;
+				padding:15px;
+				text-align:center;
+				border:6px inset #9CF;
+				border-radius:10px;
+				box-shadow:10px 10px 10px #366 inset;
+		}
+		tr:hover{
+				transform:scale(1.40,1.25);
+				color:#000;
+				border-radius:10px;
+				transition:all 3.5s;
+		}
+		caption{
+					border:	10px #9C6 groove;
+					border-radius:25px;
+					text-decoration:underline;
+					font-size:40px;
+					color:#990;
+					text-shadow:3px 3px 2px #F99;
+					margin-bottom:20px;
+					margin-top:10px;
+					padding-bottom:10px;
+					outline:2px dotted #996600;
+					outline-offset:10px;
+		}
+		.manager{
+			background-color:#009;
+		}
+		.president{
+			background-color:#306;
+		}
+		.analyst{
+			background-color:#30C;
+		}
+		.clerk{
+			background-color:#63F;
+		}
+		.salesman{
+			background-color:#09F;
+		}
+		#tr1{
+			color:#FFF;
+			background-image:url(../Image/image2.jpg);
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover
+		}
+

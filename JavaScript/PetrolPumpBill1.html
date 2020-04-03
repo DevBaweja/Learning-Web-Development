@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title> DemoForm </title>
+    <link href="Form.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript">
+	var r;
+	function setrate()
+	{	
+	
+		var i = document.getElementById('myselect').selectedIndex;
+		// getting index
+		//alert(i); // it is like pop up 
+
+		//var r = document.getElementById('myselect').options[i].text;
+		// getting text of that index
+		//alert(r);
+		
+		var rate = document.getElementById('myselect').options[i].value;
+		document.getElementById('txrate').value = rate;
+		//alert(res);
+		
+		document.getElementById('txqua').focus();
+	}
+	function cal()
+	{
+		var a = document.getElementById('txqua').value;
+		
+		var b = r*a;
+		document.getElementById('txamount').value = b;
+		
+	}
+	function refresh()
+	{
+			document.getElementById('txrate').value = "";
+			document.getElementById('txqua').value = "";
+			document.getElementById('txamount').value = ""
+			document.getElementById('myselect').select(0);
+	}
+	</script>
+	</style>
+</head>
+
+<body>
+<form>
+	<table border="1" align="center" >
+    	<tr id="maintr">
+        	<th colspan="4" > Petrol Pump Bill </th>
+        </tr>
+        
+        <tr>
+        	<th colspan="2"> Items </th>
+            <td colspan="2"> <select id="myselect" onChange="setrate()">
+            					<option value="none"> Select Items </option>
+                                <option value="95.24" > Petrol </option>
+            					<option value="75.62" > Diesel </option>
+            		         </select>  </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Rate </th>
+            <td colspan="2"> <input type="number" id="txrate" disabled/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Quantity(in l) </th>
+            <td colspan="2"> <input type="number" id="txqua" min="1" max="5"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Amount </th>
+            <td colspan="2"> <input type="text" id="txamount" disabled> </td>
+        </tr>
+        <tr>
+        	<td> <input type="button" value="Calculate" onClick="cal()"/> </td>
+            <td> <input type="button" value="Bill"/> </td>
+        	<td> <input type="button" value="Refresh" onClick="refresh()"/> </td>
+            <td> <input type="button" value="Close" onClick="window.close()"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

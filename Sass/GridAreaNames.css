@@ -1,0 +1,66 @@
+.challenge {
+  width: 1000px;
+  margin: 30px auto;
+  color: white;
+  font-family: sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 200px 400px 100px;
+      grid-template-rows: 100px 200px 400px 100px;
+  -ms-grid-columns: (1fr)[3] 200px;
+      grid-template-columns: repeat(3, 1fr) 200px;
+  grid-gap: 30px;
+      grid-template-areas: "head head head head" "box-1 box-2 box-3 side" "main main main side" "foot foot foot foot";
+}
+
+.challenge > * {
+  background-color: orangered;
+  padding: 20px;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: head;
+}
+
+.small-box--1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box-1;
+}
+
+.small-box--2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box-2;
+}
+
+.small-box--3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: box-3;
+}
+
+.main-content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: side;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foot;
+}
+/*# sourceMappingURL=GridAreaNames.css.map */

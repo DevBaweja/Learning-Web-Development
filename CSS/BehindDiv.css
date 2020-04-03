@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.division
+{
+	height:	300px;
+	width: 300px;
+	background-color:#069;
+	position:relative;
+}
+.frontface,.backface{
+	position:absolute;
+	display:inline-block;
+	background-color:#939;
+}
+.frontface{
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	opacity:1;
+}
+.backface{
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	opacity:0;
+}
+.division:hover > .frontface{
+	opacity:0;	
+	transition:all 2s;
+}
+.division:hover > .backface{ 
+	opacity:1;
+	transition:all 2s;
+}
+.division:hover{
+	transform:rotateY(180deg);	
+	transition:4s all;
+}

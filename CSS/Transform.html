@@ -1,0 +1,39 @@
+<html>
+<head>>
+<title> Transform </title>
+<style>
+	img{
+		
+		border:10px  #CC33FF inset;
+		border-radius:20px 20px 200px 20px/20px 20px 200px 20px;
+		text-align:center;
+		width:300px;
+		height:500px;
+		z-index:10;
+		position:absolute;
+	}
+	img:hover{
+			  transform:scale(.5,.5) rotate(90deg) translateX(800px); 
+			  transition: transform 5s;
+			  // rotate and the translate
+		}
+	div{
+			height:150px;
+			width:275px;
+			background-image:url(../Image/book.jpg);
+			background-size:covero;
+			z-index:15;
+			position:absolute;
+			margin-left:40px;
+			margin-top:36.8%;
+		}
+</style>
+</head>
+
+<body>
+<img src="../Image/books.jpg" />
+<div>
+
+</div>
+</body>
+</html>

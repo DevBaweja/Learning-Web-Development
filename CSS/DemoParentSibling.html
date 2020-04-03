@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title> ParentChildSibling </title>
+    <style>
+	#outer{
+		width:50%; 
+		height:400px; 
+		border:5px #999999 double
+		
+	}
+	#inner1{
+		width:30%; 
+		height:80%; 
+		border:4px #03F groove; 
+		background-color:#0F6; 
+		float:left; 
+		margin-left:10%; 
+		margin-top:5%
+		}
+	#inner2{
+		width:30%; 
+		height:80%; 
+		border:4px #03F groove; 
+		background-color:#CFF; 
+		float:left; 
+		margin-left:20%; 
+		margin-top:5%
+	}
+	
+	#outer:hover > #inner1 
+	{
+		background-color:#900
+	}
+	#outer:hover > #inner2
+	{
+		background-color:#9C0
+	}
+	
+	#inner1:hover + #inner2
+	{
+		background-color:#0F9
+	}
+	
+	</style>
+</head>
+
+<body>
+	<div id="outer">
+    
+    	<div id="inner1"> </div>
+    	<div id="inner2"> </div>
+        
+    </div>
+    <!-- descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) -->
+
+</body>
+</html>

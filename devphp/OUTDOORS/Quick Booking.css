@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+	marquee{
+		border:2px #e6e6e6 dashed;
+		font-size:35px;	
+	}
+.flip-card {
+		  border-radius:100px;
+		  background-color: transparent;
+		  width: 375px;
+		  height: 350px;
+		  perspective: 1000px;
+		  float:left;
+		  margin:20px;
+		}
+		
+		.flip-card-inner {
+		  border-radius:100px;
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+		  text-align: center;
+		  transition: transform 0.6s;
+		  transform-style: preserve-3d;
+		 
+		}
+		
+		.flip-card:hover .flip-card-inner {
+		  transform: rotateY(180deg);
+		}
+		
+		.flip-card-front, .flip-card-back {
+		  border-radius:100px;
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  backface-visibility: hidden;
+		}
+		
+		.flip-card-front {
+			background-color:e6e6e6;
+		   	}
+		
+		.flip-card-back {
+		  color:white;
+		  background-color:e6e6e6;
+		  transform: rotateY(180deg);
+		}
+			
+		.flip-card-front h3{
+			font-size:16px;
+			margin:10px;
+			padding:0px;
+			color:#777;
+		}
+		.flip-card-front h3 span{
+			color:rgba(40,180,13,.8);
+			font-size:20px;
+		}
+		.flip-card-front .line{
+			display:inline-block;
+			margin:0px;
+			padding-left:25px;
+			padding-right:25px;
+			background-color:#fff;
+			border-radius:0px 0px 100px 100px;		
+		}
+		.flip-card-front h5{
+			color:#777;
+		}
+		.flip-card-front h5 span{
+			color:rgba(40,180,13,.8);
+		}
+		
+		.flip-card-back h4{
+			margin:10px;
+			font-size:16px;	
+			color:black;
+		}
+		.flip-card-back h4 span {
+			font-size:20px;
+			color:rgba(40,180,13,.8);
+		}
+		.flip-card-back h3{
+			display:inline-block;
+			color:#777;
+			margin:0px;
+			padding-left:25px;
+			padding-right:25px;
+			background-color:#fff;
+			border-radius:0px 0px 100px 100px;
+		}
+		
+		.front-card-back div{
+			background-color:hsla(30,50%,40%,1);	
+			margin-top:30px;
+		}
+		
+	.btn_div{
+		
+		margin-top:50px;
+		font-size:14px;
+		padding-left:35px;
+		padding-right:35px;
+		padding-top:15px;
+		padding-bottom:15px;
+		border-radius:100px;
+		display:inline-block;
+		background-color:white;	
+		font-weight:900;
+		
+	}		
+	.btn_div a{
+		text-decoration:none;
+		text-transform:uppercase;
+		color:#777;
+	}

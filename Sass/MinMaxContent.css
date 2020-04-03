@@ -1,0 +1,56 @@
+.container {
+  width: 1000px;
+  margin: 50px auto;
+  background-color: #ddd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content;
+  -ms-grid-columns: min-content (1fr)[2] min-content;
+      grid-template-columns: -webkit-min-content repeat(2, 1fr) -webkit-min-content;
+      grid-template-columns: min-content repeat(2, 1fr) min-content;
+  -ms-grid-rows: (minmax(50px, min-content))[2];
+      grid-template-rows: repeat(2, minmax(50px, -webkit-min-content));
+      grid-template-rows: repeat(2, minmax(50px, min-content));
+}
+
+.container .item {
+  padding: 10px;
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+}
+
+.container .item--1 {
+  background-color: orangered;
+}
+
+.container .item--2 {
+  background-color: yellowgreen;
+}
+
+.container .item--3 {
+  background-color: blueviolet;
+}
+
+.container .item--4 {
+  background-color: palevioletred;
+}
+
+.container .item--5 {
+  background-color: royalblue;
+}
+
+.container .item--6 {
+  background-color: goldenrod;
+}
+
+.container .item--7 {
+  background-color: crimson;
+}
+
+.container .item--8 {
+  background-color: darkslategray;
+}
+/*# sourceMappingURL=MinMaxContent.css.map */

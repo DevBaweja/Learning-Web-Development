@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> DivAnimation </title>
+<style>
+	div{
+		margin:50px;
+		width:200px;
+		height:200px;
+		border:10px #990000 double;
+		background-image:url(../Image/Bliss1.jpg);
+		background-repeat:no-repeat; 
+		background-size: 100% 100%;
+	}
+	div:hover{
+				animation: animeDiv1 6s infinite alternate;
+	}
+	
+	@keyframes animeDiv1
+	{
+		0%{ background-image:url(../Image/fb.jpg);}
+		25%{background-image:url(../Image/fb1.png); transform:translateX(400px) }
+		50%{background-image:url(../Image/fb5.png); transform:translate(400px,400px) }
+		75%{background-image:url(../Image/icon.png); transform:translateY(400px) }
+		100%{background-image:url(../Image/Bliss.png) }	
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+</div>
+
+</body>
+</html>

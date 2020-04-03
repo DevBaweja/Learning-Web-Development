@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="Feedback.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script>
+	function fill(n)
+	{
+		document.getElementsByClassName('feedback').item(0).innerHTML = "";
+		for(var i=0;i<=n;i++)
+		{
+			document.getElementsByClassName('feedback').item(0).innerHTML += "<button class='material-icons' onClick='fill("+i+")'> star </button>";
+		}
+		while(i!=5)
+		{
+			document.getElementsByClassName('feedback').item(0).innerHTML += "<button class='material-icons' onClick='fill("+i+")'> star_border </button>";
+			i++;	
+		}
+		
+		//alert();
+		//document.getElementsByTagName('button').item(1).style.border="none #FFF";
+	}
+	
+	function remBorder()
+	{
+		alert();
+		document.getElementsByTagName('button').item(1).style.border="none #FFF";
+	}
+</script>
+</head>
+
+<body>
+<div class="feedback"> 
+<button class="material-icons" onClick="fill(0)">star_border</button>
+<button class="material-icons" onClick="fill(1)" onFocus="remBorder()">star_border</button>
+<button class="material-icons" onClick="fill(2)">star_border</button>
+<button class="material-icons" onClick="fill(3)">star_border</button>
+<button class="material-icons" onClick="fill(4)">star_border</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> DivAnimation </title>
+<style>
+	div{
+		margin:100px;
+		width:200px;
+		height:200px;
+		border:10px #990000 double;
+		background-color: #0CC;
+	}
+	div:hover{
+				animation: animeDiv 5s infinite alternate;
+	}
+	
+	@keyframes animeDiv
+	{
+		0% {background-color:#F00}
+		25% {background-color:#0F0}
+		50% {background-color:#00F}
+		75% {background-color:#FF0}
+		100% {background-color:#F0F}	
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+</div>
+
+</body>
+</html>

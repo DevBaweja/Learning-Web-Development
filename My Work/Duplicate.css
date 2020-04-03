@@ -1,0 +1,59 @@
+    h1 {
+            text-align:center;
+            color:blanchedalmond;
+            font-family:cursive;
+            font-size:100%;
+            border: 1px solid aqua;
+        }
+        p {
+            text-align:left;
+            color:chartreuse;
+            font-family:cursive;
+            font-size:80%;
+        }
+        ol {
+            text-align:left;
+            color:chocolate;
+            font-family:inherit;
+            
+        }
+        ul {
+            text-align:left;
+            color:darkorange;
+            font-family:inherit;
+        }
+        legend 
+        {
+            font-style:oblique;
+        } 
+#number01 {
+    color:firebrick;
+    text-align:center;
+    margin:5px;
+     
+}
+#droplist01 {
+    text-align:center;
+    color:cadetblue;
+    border:1px solid blue;
+    padding:5px;  
+}
+
+.list01{
+    color:darkgreen;
+    padding:5px;
+    margin:10px;
+    font-family:cursive
+}
+.list02{
+    text-align:center;
+     color:fuchsia;
+    padding:5px;
+    margin:10px;
+    font-family:cursive
+}
+.underline {
+    text-decoration:underline;
+}
+
+

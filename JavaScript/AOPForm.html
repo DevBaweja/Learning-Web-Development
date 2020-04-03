@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title> DemoForm </title>
+   <link href="Form.css" type="text/css" rel="stylesheet">
+   
+    <script type="text/javascript">
+	
+		function add(){
+			
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			
+			var c = a+b;
+			
+			document.getElementById('txres').value = c;
+		}
+		function sub(){
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			
+			var c = a-b;
+			
+			document.getElementById('txres').value = c;
+		}
+		function mul(){
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			
+			var c = a*b;
+			
+			document.getElementById('txres').value = c;
+		}		
+		function div(){
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			
+			var c = a/b;
+			
+			document.getElementById('txres').value = c;
+		}
+		function mod(){
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			
+			var c = a%b;
+			
+			document.getElementById('txres').value = c;
+		}
+		function refresh() {
+				document.getElementById('tx1').value = null;
+				document.getElementById('tx2').value = null	;
+				document.getElementById('txres').value = null;
+				document.getElementById('tx1').focus()
+		}
+	</script>    
+</head>
+
+<body onLoad="document.getElementById('tx1').focus()">
+<form>
+	<table border="1" align="center">
+    
+    	<tr id="maintr">
+        	<th colspan="5" > AOP Form </th>
+        </tr>
+        <tr >
+        	<th colspan="3"> First Number </th>
+            <td colspan="2"> <input type="text" id="tx1"/> </td>
+        </tr>
+        <tr >
+        	<th colspan="3"> Second Number </th>
+            <td colspan="2"> <input type="text" id="tx2"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="3"> Result </th>
+            <td colspan="2"> <input type="text" id="txres" disabled /> </td>
+        </tr>
+        <tr >
+        	<td> <input type="button" value="+" onClick="add()"/> </td>
+            <td> <input type="button" value="-" onClick="sub()"/> </td>
+            <td> <input type="button" value="*" onClick="mul()"/> </td>
+            <td> <input type="button" value="/" onClick="div()"/> </td>
+            <td> <input type="button" value="%" onClick="mod()"/> </td>
+        </tr>
+        <tr>
+        	<td colspan="3"> <input type="button" value="Refresh" onClick="refresh()"/> </td>
+            <td colspan="2"> <input type="button" value="Close" onClick="window.close()"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

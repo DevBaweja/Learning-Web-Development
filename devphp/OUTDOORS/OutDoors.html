@@ -1,0 +1,69 @@
+<html>
+<head>
+<title> OUTDOORS </title>
+<link rel="stylesheet" type="text/css" href="OutDoors.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="Icons.css" >
+<link rel="stylesheet" href="Section.css" >
+<script>
+	function showmenu()
+	{
+		document.getElementsByClassName('icon__block').item(0).style = "opacity:1; transform:translateX(0px);";
+			
+			document.getElementsByClassName('nav').item(0).innerHTML = "<button onClick='disclose()'> <i class='material-icons'> clear </i> </button>";
+			
+	}
+	function disclose()
+	{
+		document.getElementsByClassName('icon__block').item(0).style = "opacity:0;";
+			
+			document.getElementsByClassName('nav').item(0).innerHTML = "<button onClick='showmenu()'> <i class='material-icons'> blur_on </i> </button>";
+			
+	}
+</script>
+</head>
+
+<body>
+<section>
+ 	<span class="nav"> <button onClick="showmenu()"> <i class="material-icons"> blur_on </i> </button> </span>
+    
+    <div class="icon__block">
+        <span class="icon__block-icon"> <a href="OutDoors.html"> <i class="material-icons"> home </i> </a> </span>
+        <span class="icon__block-icon"> <a href="http://localhost/devphp/OUTDOORS/Flight%20Searching%20Form(Destination%20Date).php"> <i class="material-icons"> search </i> </a> </span>
+        <span class="icon__block-icon"> <a href="http://localhost/devphp/OUTDOORS/Quick%20Booking.php?search=Search"> <i class="material-icons"> notification_important </i> </a> </span>
+        <span class="icon__block-icon"> <a href="#"> <i class="material-icons"> train </i> </a> </span>
+    </div>
+</section>    
+<header class="header">
+	<div class="header__logo-box">
+    	<img src="../../Image/logo4.png" alt="Logo" class="header__logo"/>
+    </div>
+    
+    <div class="header__text-box">
+    <h1 class="heading-primary"> 
+    	<span class="heading-primary--main"> Outdoors </span>
+        <span class="heading-primary--sub"> is where life happens. </span>
+    </h1>
+  	<a href="#" class="btn btn--white btn--anime"> Discover our Tours </a>
+    </div>
+</header>	
+
+<section class="section-about">
+<div class="about">
+    	<h2 class="heading-secondary">
+        	Exciting tours for adventurous people
+        </h2> 
+        <div class="about-text">
+        	<a href="#" class="btn--learn"> Learn More </a>
+        </div>
+        <div class="about-image">
+        	<img src="../../Image/image203.jpg" class="photo__1 pic" />
+            <img src="../../Image/image201.jpg" class="photo__2 pic" />
+            <img src="../../Image/image202.jpg" class="photo__3 pic" />
+        </div>
+</div>
+</section>
+
+</body>
+
+</html>

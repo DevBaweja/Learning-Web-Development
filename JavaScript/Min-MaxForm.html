@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title> DemoForm </title>
+    <link href="Form.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript">
+		
+		function maximum(){
+			
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			var c = parseInt(document.getElementById('tx3').value) ;
+			
+			var r;
+			if(a>b && a>c)
+			r=a;
+			else if(b>c)
+			r=b;
+			else 
+			r=c;
+			
+			document.getElementById('txres').value = r;
+		}
+		function minimum(){
+			
+			var a = parseInt(document.getElementById('tx1').value) ;
+			var b = parseInt(document.getElementById('tx2').value) ;
+			var c = parseInt(document.getElementById('tx3').value) ;
+			
+			var r;
+			if(a<b && a<c)
+			r=a;
+			else if(b<c)
+			r=b;
+			else 
+			r=c;
+			
+			document.getElementById('txres').value = r;
+		}
+		function refresh() {
+				document.getElementById('tx1').value = "";
+				document.getElementById('tx2').value = "";
+				document.getElementById('tx3').value = "";
+				document.getElementById('txres').value = "";
+				document.getElementById('tx1').focus()
+		}
+	
+	</script>
+</head>
+
+<body onLoad="document.getElementById('tx1').focus()">
+<form>
+	<table border="1" align="center">
+    	<tr id="maintr">
+        	<th colspan="4" > Min-Max Form </th>
+        </tr>
+        
+        <tr>
+        	<th colspan="2"> First Number </th>
+            <td colspan="2"> <input type="text" id="tx1"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Second Number </th>
+            <td colspan="2"> <input type="text"  id="tx2"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Third Number </th>
+            <td colspan="2"> <input type="text"  id="tx3"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="2"> Result </th>
+            <td colspan="2"> <input type="text" id="txres" disabled> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="max" onClick="maximum()"/> </td>
+        	<td> <input type="button" value="min" onClick="minimum()"/> </td>
+        	<td> <input type="button" value="Refresh" onClick="refresh()"/> </td>
+            <td> <input type="button" value="Close" onClick="window.close()"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title> DemoForm </title>
+      <link href="Form.css" type="text/css" rel="stylesheet">
+      <script type="text/javascript">
+	  var r;
+	  	function init()
+		{
+			r=0;
+			document.getElementsByTagName('input').item(0).focus();
+		}
+	  	function fun()
+		{
+			
+			var a = document.getElementsByTagName('select').item(0).value;
+			if(a == "btech")
+				r = 60000;
+			else if(a == "mtech")
+				r = 80000;
+			else if(a == "ug")
+				r = 20000;
+			else if(a == "pg")
+				r = 40000;
+				
+			document.getElementById('degfee').value = r;
+		}	
+		function nonfun(i)
+		{
+			var k = 0;
+			
+			if(i == 0)
+			k +=4000;
+			if(i == 1)
+			k +=6000;
+			if(i == 2)
+			k+=8000;
+			
+			document.getElementById('facfee').value = k;
+			
+			
+		}
+	  
+	  </script>
+</head>
+
+<body onLoad="init()">
+<form>
+	<table border="1" align="center">
+    	<tr id="maintr">
+        	<th colspan="4" > Admission Form </th>
+        </tr>
+        
+        <tr>
+        	<th> Candidate name </th>
+            <td colspan="3"> <input type="text"/> </td>
+        </tr>
+        <tr>
+        	<th> Father Name </th>
+            <td colspan="3"> <input type="text"/> </td>
+        </tr>
+        <tr>
+        	<th> Gender </th>
+            <td class="inner"> <input type="radio" name="gender" />  Male  </td>
+            <td class="inner"> <input type="radio" name="gender" />  Female  </td>
+            <td class="inner"> <input type="radio" name="gender" />  Other  </td>
+            
+        </tr>
+        <tr>
+        	<th> DOB </th>
+            <td colspan="3"> <input type="date"/> </td>
+        </tr>
+        <tr>
+        	<th> Address </th>
+            <td colspan="3"> <textarea rows="2" cols="30"> Enter Address Here </textarea> </td>
+            
+        </tr>
+        <tr>
+        	<th> Degree </th>
+            <td colspan="3"> <select onChange="fun()">
+            		<option value="none"> Select Degree </option>
+                    <option value="btech"> Btech </option>
+                    <option value="mtech"> Mtech </option>
+                    <option value="ug"> UG </option>
+                    <option value="pg"> PG </option>
+            		</select> </td>
+        </tr>
+        <tr> 
+         	<th> Degree Fee </th>
+            <td colspan="3"> <input type="text" id="degfee" disabled/> </td>
+        </tr>
+        <tr>
+        	<th> Facility </th>
+            <td class="inner"> <input type="checkbox" onClick="nonfun(0)" id="chmess"/> Mess </td>
+            <td class="inner"> <input type="checkbox" onClick="nonfun(1)" id="chhostel"/> Hostel </td>
+            <td class="inner"> <input type="checkbox" onClick="nonfun(2)" id="chbus"/> Bus </td>
+            	
+        </tr>
+        <tr> 
+        	<th> Facility Fees </th>
+            <td colspan="3">  <input type="text" id="facfee" disabled /> </td>
+        </tr>
+        <tr> 
+        	<th> Total Fees </th>
+            <td colspan="3"> <input type="text" disabled /> </td>
+        </tr>
+        <tr>
+        	<td> <input type="button" value="Calculate"/> </td>
+            <td> <input type="button" value="Receipt"/> </td>
+        	<td> <input type="button" value="Refresh"/> </td>
+            <td> <input type="button" value="Close"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

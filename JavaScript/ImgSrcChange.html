@@ -1,0 +1,43 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+<style>
+	img{
+		height:400px;	
+		width:400px;
+	}
+</style>
+<script type="text/javascript">
+
+var image = new Array(5);
+image[0] = "../Image/brand1.jpg";
+image[1] = "../Image/brand2.jpg";
+image[2] = "../Image/brand3.jpg";
+image[3] = "../Image/brand4.jpg";
+image[4] = "../Image/brand5.jpg";
+var k;
+var id;
+function init()
+{
+	k=0;
+	changesrc();
+	id = window.setInterval("changesrc()",2000);	
+}
+function changesrc()
+{
+	if(k<image.length)
+	document.getElementsByTagName('img').item(0).src = image[k++];
+	else 
+	window.clearInterval(id);
+}
+// background image
+</script>
+</head>
+
+<body onLoad="init()" onLoad="changesrc()">
+<img src="../Image/coffeehouse2.jpg"  />
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> DivMultiTransition </title>
+<style>
+	div{
+		margin:300px;
+		width:200px;
+		height:200px;
+		border:10px #990000 double;
+		background-color: #0CC;
+	}
+	div:hover{
+				background-color:#0F9;
+			//	border:#0F3 10px #CCFFFF;
+				transform:scale(2,2);
+				transition-property: transform,background-color;
+				transition-duration: 4s,10s;
+				transition-delay: 0s,2s;
+				transition-timing-function:ease-in-out;
+			//	transition-delay: -1s,3s;
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+</div>
+</body>
+</html>

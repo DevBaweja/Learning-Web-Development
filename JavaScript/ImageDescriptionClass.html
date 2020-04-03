@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title> DemoImageDEscription </title>
+    <style>
+		body{
+		color:#C9F; 
+		border:#99F 8px groove; 
+		font-family:'Comic Sans MS', cursive; 
+		margin-left:10%; 
+		margin-right:12%
+		}
+		
+		table{
+			width:800px; text-align:center; 
+			border:5px #6699CC dotted; 
+			border-bottom:#333 10px double; 
+			border-top:#333 10px double; 
+			margin-left:15%
+		}
+		
+		caption{
+			color:#990; 
+			font-weight:bolder; 
+			font-size: 25px; 
+			border:#9C0 7px ridge; 
+			text-decoration:underline
+		}
+		
+		th{
+			height:175px; 
+			width:250px
+		}
+		td{
+			width:600px;
+		}
+		img{
+			height:100%;
+			width:100%;
+		}
+	</style>
+    <script type="text/javascript">
+	function rotateImg(i)
+	{
+		document.getElementsByTagName('img').item(i).style.transform = "rotate(360deg)";
+		document.getElementsByTagName('img').item(i).style.transition = "transform 2s";	
+	}
+	function resetImg(i)
+	{
+			document.getElementsByTagName('img').item(i).style.transform = "rotate(0deg)";
+			document.getElementsByTagName('img').item(i).style.transition = "transform -5s";	
+	}
+	</script>
+</head>
+
+<body>
+	<table border="2">
+    <caption> Most Fasinating Places of The World </caption>
+    	<tr>
+        	<th  class="A">  <img src="../Image/image7.jpg" onMouseOver="rotateImg(0)" onMouseOut="resetImg(0)"/> </th>
+            <td class="A1"> Massive glaciers, staggering mountains, plains dotted with wild animals: We sure live in a big, beautiful world. And while pinpointing all of Mother Nature's greatest hits could take a lifetime, we think these 50 out-of-this-world landscapes and awe inspiring wonders from Arizona to Antarctica need to move to the very top of your travel list. </td>
+        </tr>
+    	<tr>
+        	<th class="A"> <img src="../Image/image9.jpg" onMouseOver="rotateImg(1)" onMouseOut="resetImg(1)"/> </th>
+            <td class="A1"> Venezuela overflows with natural wonders, including the world's highest waterfall—the 3,212-foot cascades of Angel Falls, located in the UNESCO-protected Canaima National Park. Canaima is by far the country's most popular attraction, and the falls stretch an astounding 19 times higher than Niagara Falls. Bonus: Pixar animators used the location as inspiration for Paradise Falls in Up </td>
+        </tr>
+    	<tr>
+        	<th class="A"> <img src="../Image/image2.jpg" onMouseOver="rotateImg(2)" onMouseOut="resetImg(2)"/> </th>
+            <td class="A1"> Although 99 percent of Antarctica is covered with ice, the landscape still manages to be stunningly diverse—surreal blue glaciers, active volcanoes, the rough waterways of the Drake Passage, and 360-degree views of untouched snow. And those views are made even better when an emperor penguin or humpback whale makes an appearance </td>
+        </tr>
+    	<tr>
+        	<th class="A"> <img src="../Image/image14.jpg" onMouseOver="rotateImg(3)" onMouseOut="resetImg(3)"/> </th>
+            <td class="A1"> Antelope Canyon is a slot canyon (and serious Instagram darling) in the American Southwest. Its Navajo name translates to “the place where water runs through rocks”—an allusion to the canyon’s creation through erosion. The narrow, undulating spaces between rock formations allow for vivid patterns when sunlight filters through the striated stone </td>
+        </tr>                        
+    </table>
+</body>
+</html>

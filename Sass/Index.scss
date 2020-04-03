@@ -1,0 +1,30 @@
+// Mapping in Scss
+
+$colors: (
+    primary:  #0A79DF, 
+    accent:  #01CBC6,
+    fortomato: #ff6347,
+    font:  #fff
+);
+
+@function colors($colorName){
+    @return map-get($map: $colors, $key: $colorName);
+}
+
+$sizes: (           
+    fontzero:16px,
+    fontone:18px,
+    fonttwo:20px
+);
+
+
+@function sizes($sizeName){
+    @return map-get($map: $sizes, $key: $sizeName)
+}
+
+body{
+    background-color:colors(primary);
+    color:colors(font);   
+    font-size: sizes(fonttwo);  
+    text-decoration: colors(fortomato) wavy underline;
+}

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title> DemoTableImage </title>
+        <style>
+			img{
+				 width:300px; 
+				 height:200px 
+			}
+			#mainimage{
+				width:910px;
+				height:200px
+			}
+			
+		</style>
+        
+        <script type="text/javascript">
+		
+		var  r;
+		function init()
+		{
+			r = document.getElementById('mainimage').src;
+		}
+		
+		function set(i)
+		{
+			
+			var s = document.getElementsByTagName('img').item(i).src; 
+			
+			document.getElementById('mainimage').src = s;
+			
+		}
+		
+		function reseti()
+		{
+				document.getElementById('mainimage').src = r;
+		}
+		</script>
+	</head>
+
+	<body onLoad="init()">
+    <table border="2" align="center">
+    <!-- using caption tag for table heading -->
+    <caption> WallPapers </caption>
+    <tr>
+    <td colspan="4"> <img id="mainimage" src="../Image/Welcome.jpg"/> </td>
+    </tr>
+    <tr>
+    	<td> <img onMouseOver="set(1)" onMouseOut="reseti()" src="../Image/image8.jpg"/> </td>
+        <td> <img onMouseOver="set(2)" onMouseOut="reseti()" src="../Image/image.jpg"/> </td>
+        <td> <img onMouseOver="set(3)" onMouseOut="reseti()" src="../Image/image1.jpg"/> </td>
+    </tr>
+    
+    <tr>
+    	<td> <img  onMouseOver="set(4)" onMouseOut="reseti()" src="../Image/image2.jpg"/> </td>
+        <td> <img  onMouseOver="set(5)" onMouseOut="reseti()" src="../Image/image3.jpg"/> </td>
+        <td> <img  onMouseOver="set(6)" onMouseOut="reseti()" src="../Image/image4.jpg"/> </td>
+    </tr>
+    
+    <tr>
+    	<td> <img  onMouseOver="set(7)" onMouseOut="reseti()" src="../Image/image5.jpg"/> </td>
+        <td> <img  onMouseOver="set(8)" onMouseOut="reseti()" src="../Image/image6.jpg"/> </td>
+        <td> <img  onMouseOver="set(9)" onMouseOut="reseti()" src="../Image/image7.jpg"/> </td>
+    </tr>
+    
+    </table>
+
+	</body>
+</html>
+

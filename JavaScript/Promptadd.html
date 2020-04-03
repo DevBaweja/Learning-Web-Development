@@ -1,0 +1,43 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+<script type="text/javascript">
+var a,b;
+function sayHello()
+{
+	 a = parseInt(prompt("Enter first number"));
+	 b = parseInt(prompt("Enter second number"));
+	
+	var c = a+b;
+	alert("Add is: "+c);	
+}
+function operation(i){
+	
+	var k = 0;
+	if(i==0)
+	{	
+		k = a+b;
+		alert("Add is: "+k);
+	}
+	else if(i==1)
+	{
+		k = a-b;
+		alert("Substract is:"+k);
+	}
+}
+function oper()
+{
+	
+	
+}
+</script>
+</head>
+
+<body onLoad="sayHello()">
+
+<input type="button" value="Add" onClick="operation(0)">
+<input type="button" value="Substract" onClick="operation(1)">
+
+</body>
+</html>

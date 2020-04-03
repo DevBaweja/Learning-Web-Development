@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+.section-about{
+	height:105vh;
+	background-color:#f4f4f4;
+	clip-path:polygon(0 20%,100% 0%,100% 80%,0% 100%);
+	margin-top:-18vh;
+	position:relative;
+}
+.about{
+	width:100%;
+	position:absolute;
+	top:18vh;
+	height:55vh;
+	text-align:center;
+}
+.heading-secondary{
+	font-size:35px;
+	text-transform:uppercase;
+	font-weight:700;
+	display:inline-block;
+	background-image:linear-gradient(to right,rgb(126,213,111),rgb(40,180,13));
+	 color:transparent;
+	-webkit-background-clip:text;
+	letter-spacing:2px;
+	transition:all .2s;
+}
+
+.heading-secondary:hover {
+	transform:skewY(-6deg) skewX(10deg) scale(1.1,1.1);
+	text-shadow:5px 10px 20px hsla(0,0%,60%,1);
+}
+
+.btn--learn:link , .btn--learn:visited{
+	color:rgb(40,180,13);
+	font-size:24px;
+	border-bottom:3px solid	rgb(40,180,13);
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:3px;
+	transition:all .2s;
+}
+.btn--learn:hover{
+	background-color:rgb(40,180,13);
+	color:#fff;
+	box-shadow:0px 10px 20px hsla(0,0%,75%,1);
+	transform:translateY(-40px);
+}
+
+.btn--learn:active{
+	background-color:rgb(40,180,13);
+	color:#fff;
+	box-shadow:0px 10px 20px hsla(0,0%,75%,1);
+	transform:translateY(0px);
+}
+
+.about .about-text{
+		margin-top:80px;
+		margin-left:50px;
+		float:left;
+		background-color:#fff;
+		height:55vh;
+		width:40%;
+		overflow:scroll;
+}
+.about .about-text .btn_airline
+{	
+	background-color:white;	
+	color:rgb(40,180,13);
+	font-size:24px;
+	border-bottom:3px solid	rgb(40,180,13);
+	text-decoration:none;
+	text-transform:capitalize;
+	padding:10px;
+	display:block;
+	margin:45px
+}
+
+.about-text h2{
+	font-size:35px;	
+	 color:rgb(40,180,13);
+	background-color:#e6e6e6;
+	border:2px #777 solid;
+	margin:10px;
+	margin-bottom:25px;
+}
+.about-image{
+	margin-right:100px;
+	margin-top:30px;
+	float:right;
+	height:55vh;
+	width:45%;
+	position:relative;
+}
+.pic{
+	height:225px;
+	width:45%;
+	box-shadow:0 15px 40px hsla(0,0%,30%,1);
+	position:absolute;
+	transition:all .4s;
+}
+
+.photo__1{
+	z-index:0;
+	left:25px;
+	top:25px;
+}
+.photo__2{
+	z-index:1;
+	right:60px;
+	top:70px;
+}
+.photo__3{
+	z-index:2;
+	left:150px;
+	top:150px;
+}
+.pic:hover{
+	outline:15px solid rgba(40,180,13,1);
+	outline-offset:15px;
+	z-index:100;
+	transform:scale(1.1) translateY(-20px);
+	box-shadow:0px 25px 40px hsla(0,0%,30%,1);	
+}
+
+.about-image:hover .pic:not(:hover){
+	transform:scale(.8);
+}

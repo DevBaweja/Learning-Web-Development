@@ -1,0 +1,36 @@
+
+<html>
+<head>
+<title> </title>
+<style>
+	#img1{
+		width:200px;
+		height:200px;	
+		border:5px #990000 dotted;
+	}
+</style>
+<script type="text/javascript">
+var borderstyle,borderwidth;
+		function init()
+	{
+			borderstyle = document.getElementById('img1').style.borderStyle;
+			borderwidth = document.getElementById('img1').style.borderWidth;
+	}
+		function changeborder()
+	{
+		document.getElementById('img1').style.borderStyle = "inset" ;
+		document.getElementById('img1').style.borderWidth = "20px"
+		
+	}
+		function defaultimg()
+	{
+		document.getElementById('img1').style.borderStyle = borderstyle;
+		document.getElementById('img1').style.borderWidth = borderwidth;
+	}
+</script>
+</head>
+
+<body onLoad="init()">
+<img src="../Image/Bliss1.jpg" id="img1" onmouseover="changeborder()"  onMouseOut="defaultimg()"/>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> DivAnimation </title>
+<style>
+	div{
+		margin-left:600px;
+		margin-top:250px;
+		width:200px;
+		height:200px;
+		border:10px #990000 double;
+		background-repeat:no-repeat; 
+	}
+	div:hover{
+				animation: animeDiv1 12s infinite;
+	}
+	img {
+		
+	}
+	
+	@keyframes animeDiv1
+	{
+		0%{ }
+		18%{ transform: rotate(360deg); background-image:url(../Image/image4.jpg); background-size:100% 100%; border:10px #0000FF dashed }
+		36%{ transform: rotate(0deg); background-image:url(../Image/image5.jpg);  background-size:100% 100%; border:10px #990000 dotted }
+		54%{ transform: rotate(360deg);  background-image:url(../Image/image6.jpg);  background-size:100% 100%; border:10px #9933FF double  }
+		72% { transform:rotate(0deg); background-image:url(../Image/image7.jpg);  background-size:100% 100%; border:10px #363 dashed}
+		100%{ transform:rotate(360deg) scale(3,3);background-image:url(../Image/image4.jpg) ,url(../Image/image5.jpg), url(../Image/image6.jpg),url(../Image/image7.jpg) ; background-size: 50% 50% , 50% 50% , 50% 50% , 50% 50% ; background-position:left top, right top, left  bottom, right bottom;background-repeat:no-repeat, no-repeat , no-repeat , no-repeat; border: #9FF outset 5px  }	
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+
+</div>
+
+</body>
+</html>
+.

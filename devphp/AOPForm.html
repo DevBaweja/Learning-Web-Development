@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title> DemoForm </title>
+   <link href="../../../Users/Lenovo/Desktop/Dreamweaver/Workspace/JavaScript/Form.css" type="text/css" rel="stylesheet">
+   
+    <script type="text/javascript">
+		function refresh() {
+				document.getElementById('tx1').value = null;
+				document.getElementById('tx2').value = null	;
+				document.getElementById('txres').value = null;
+				document.getElementById('tx1').focus()
+		}
+	</script>   
+</head>
+
+<body onLoad="document.getElementById('tx1').focus()">
+<form action="AOPForm.php" method="get">
+	<table border="1" align="center">
+    
+    	<tr id="maintr">
+        	<th colspan="5" > AOP Form </th>
+        </tr>
+        <tr >
+        	<th colspan="3"> First Number </th>
+            <td colspan="2"> <input type="text" id="tx1" name="tx1"/> </td>
+        </tr>
+        <tr >
+        	<th colspan="3"> Second Number </th>
+            <td colspan="2"> <input type="text" id="tx2" name="tx2"/> </td>
+        </tr>
+        <tr>
+        	<th colspan="3"> Result </th>
+            <td colspan="2"> <input type="text" id="txres" name="tx3" disabled /> </td>
+        </tr>
+        <tr >
+        	<td> <input type="submit" value="+"  name="sbplus"/> </td>
+            <td> <input type="submit" value="-"  name="sbsub"/> </td>
+            <td> <input type="submit" value="*"  name="sbmul"/> </td>
+            <td> <input type="submit" value="/"  name="sbdiv"/> </td>
+            <td> <input type="submit" value="%"  name="sbmod"/> </td>
+        </tr>
+        <tr>
+        	<td colspan="3"> <input type="button" value="Refresh" onClick="refresh()"/> </td>
+            <td colspan="2"> <input type="button" value="Close" onClick="window.close()"/> </td>
+        </tr>
+    
+	</table>
+</form>
+</body>
+</html>

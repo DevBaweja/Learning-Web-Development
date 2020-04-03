@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<script type="text/javascript">
+
+function filldiv()
+{
+		document.getElementById('div1').innerHTML = '<img src="../Image/Bliss1.jpg" style="height:200px;width:200px" />';
+		document.getElementById('div1').innerHTML += '<p> Image Des </p>';
+}
+function hello()
+{
+	document.getElementsByTagName('h1').item(0).innerHTML = "Hello";
+}
+function bye()
+{
+	document.getElementsByTagName('h1').item(0).innerHTML = "Bye";
+}
+</script>
+</head>
+
+<body>
+
+	<div id="div1"></div>
+    <input type="button" value="OK" onclick="filldiv()" />
+    
+    <h1> Say Something </h1>
+    <input type="button" value="Hello" onclick="hello()" />
+     <input type="button" value="Bye" onclick="bye()" />
+</body>
+</html>

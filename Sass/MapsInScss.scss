@@ -1,0 +1,18 @@
+// Mapping in Scss
+
+$color: (
+    primary:  #0A79DF, 
+    accent:  #01CBC6,
+    font:  #fff
+);
+$sizes: (
+    fontzero:16px,
+    fontone:18px,
+    fonttwo:20px
+);
+
+body{
+    background-color:map-get($color,primary);
+    color:map-get($map: $color, $key:font );   
+    font-size: map-get($map: $sizes, $key: fontone );        
+}

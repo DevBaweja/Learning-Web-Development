@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nav {
+	position:fixed;
+	top:17.5%;
+	left:92.5%;	
+	z-index:99999;
+	
+}
+.nav button{
+	background-color:transparent;
+	border:none;
+		
+}
+.nav button i{
+	color:#4d4d4d;	
+	font-size:50px;
+	border-radius:100px;
+	background-color:#fff;
+		transition:all .3s;
+}
+.nav button i:hover{
+	transform:translateY(-5px);
+	cursor:cell;
+}
+.nav button i:active{
+	transform:translateY(-3px);
+}
+
+.nav button i::after{
+	content:"";
+	display:inline-block;
+	height:100%;
+	width:100%;
+	border-radius:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	transition:all .4s;
+	background-color:#4d4d4d;
+}
+
+.nav button i:hover::after{
+	transform:scale(4,4);
+	opacity:0;
+}
+
+.icon__block{
+	position:fixed;
+	margin-top:25px;
+	top:22.5%;
+	left:87.5%;
+	opacity:0;
+	z-index:99999;
+	transform:translateX(100px);
+		transition:all .5s;
+}
+.icon__block-icon{
+	display:block;	
+	border-radius:100px;
+	margin:20px;
+	padding:10px;
+	transition:all .4s ease-out;	
+}
+.icon__block-icon a i{
+	color:#000;		
+	font-size:40px;
+	cursor:cell;	
+	// this is icons
+}
+
+.icon__block-icon:hover{
+	transform:scale(1.5,1.5);
+	cursor:cell;	
+}

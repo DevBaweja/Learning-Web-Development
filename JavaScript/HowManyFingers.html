@@ -1,0 +1,44 @@
+<!-- This game created by Javed Baloch, 8-May-2016--->
+<html>
+
+    <head>
+    
+        <title>How Many Fingers</title>
+        <style type="text/css">    
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <p>How Many Finder I am holding Up!</p>
+        
+        <p><input type="text" id="numberBox"> <button id="check">Guess!</button></p>
+        
+        <script type="text/javascript">
+        
+            document.getElementById("check").onclick = function() {
+                
+             var EnteredNumber = Math.random();
+                
+                EnteredNumber = EnteredNumber * 6;
+                
+                EnteredNumber = Math.floor(EnteredNumber);
+                
+                if(document.getElementById("numberBox").value == EnteredNumber) {
+                    alert("Well done! You got it!");
+                } else {
+                    
+                    alert("Note! The number was " + EnteredNumber);
+                    
+                }
+            
+            }
+                
+        
+        </script>
+    
+    
+    </body>
+</html>

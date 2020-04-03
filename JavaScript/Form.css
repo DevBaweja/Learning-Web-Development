@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+		body{
+			font-family:'Comic Sans MS', cursive;
+			background-color:aliceblue	
+		}
+		#maintr{
+			color:#606; 
+			font-size:34px; 
+			font-weight:bolder; 
+			text-decoration:underline;
+			}
+		table{
+				text-align:center; 
+				color:#C69; 
+				height:500px; 
+				width:500px; 
+				border:2px #CC00FF dotted; 
+				font-size:24px
+				}
+		.inner{
+			font-size:20px;
+			color:#90C;
+		}
+		.left{
+			text-align:left;	
+		}

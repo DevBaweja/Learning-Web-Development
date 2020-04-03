@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	color:#000;
+}
+.desp{
+	position:fixed;
+	top:20%;
+	left:3%;
+	width:20%;
+	height:40%;
+	background-color:#0F6;
+	border:4px dashed #FFFFCC;
+}
+.desp pre{
+	color:#FFF;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:18px;
+	
+}
+.desp p {
+	font-size:28px;
+	
+}
+.image{
+		position:absolute;
+		top:20%;
+		left:25%;
+		height:122.5vh;
+		width:52.5%;
+		background-color:#090;
+	
+}
+.image img{
+	height:100%;
+	width:100%;	
+}

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>  </title>
+<style>
+	img {
+		float:left;
+		width:300px;
+		height:300px;
+		position:absolute;
+		z-index:10;
+		border:#99CCFF 5px double;
+		border-right:none;
+	}
+	p {
+			margin:0px;
+			padding-left:20px;	
+			border:5px double #99CCFF;
+			border-left:none;
+			border-right: 15px groove #99CCFF;
+			font-size:17px;
+			width:285px;
+			height:300px;
+			font-family:"Comic Sans MS", cursive;
+			color:#FFF;
+			position:absolute;
+			float:left;	
+			z-index:5;
+			background-color:#0FF;
+	}
+	
+	#img2{
+			margin-top:400px;
+		}
+	#p2{
+		margin-top:400px;	
+	}
+	#img3{
+		margin-left:800px;	
+	}
+	#p3{
+		margin-left:800px;	
+	}
+	#img4{
+		margin-left:800px;
+		margin-top:400px;
+	}
+	#p4{
+		margin-left:800px;
+		margin-top:400px;	
+	}
+	
+	img:hover + p{
+					transform:translateX(305px);	
+					transition:all 3s;
+	} // use adjancent sibling(+) other general sibling is harmful
+	
+</style>
+</head>
+
+<body>
+<img id="img1" src="../Image/Bliss1.jpg" />
+<p id="p1"> Massive glaciers, staggering mountains, plains dotted with wild animals: We sure live in a big, beautiful world. And while pinpointing all of Mother Nature's greatest hits could take a lifetime, we think these 50 out-of-this-world landscapes and awe inspiring wonders from Arizona to Antarctica need to move to the very top of your travel list </p>
+
+<img id="img2" src="../Image/image14.jpg" />
+<p id="p2" > Antelope Canyon is a slot canyon (and serious Instagram darling) in the American Southwest. Its Navajo name translates to “the place where water runs through rocks”—an allusion to the canyon’s creation through erosion. The narrow, undulating spaces between rock formations allow for vivid patterns when sunlight filters through the striated stone </p>
+
+<img id="img3" src="../Image/image21.jpg"/>
+<p id="p3"> Venezuela overflows with natural wonders, including the world's highest waterfall—the 3,212-foot cascades of Angel Falls, located in the UNESCO-protected Canaima National Park. Canaima is by far the country's most popular attraction, and the falls stretch an astounding 19 times higher than Niagara Falls. Bonus: Pixar animators used the location as inspiration for Paradise Falls in Up  </p>
+
+<img id="img4" src="../Image/image22.jpg" />
+<p id="p4" > Although 99 percent of Antarctica is covered with ice, the landscape still manages to be stunningly diverse—surreal blue glaciers, active volcanoes, the rough waterways of the Drake Passage, and 360-degree views of untouched snow. And those views are made even better when an emperor penguin or humpback whale makes an appearance </p>
+</body>
+</html>

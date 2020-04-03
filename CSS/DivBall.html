@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> DivAnimation </title>
+<style>
+	div{
+		margin:200px;
+		width:100px;
+		height:100px;
+		border:10px #990000 double;
+		background-color:#00C;
+		border-radius:150px;
+	}
+	div:hover{
+				animation: animeDiv1 4s infinite alternate;
+	}
+	
+	@keyframes animeDiv1
+	{
+		0%{ }
+		25%{ transform: rotate(90deg) translateY(-200px) }
+		50%{ transform: rotate(180deg) translateX(-400px) }
+		75%{ transform: rotate(270deg) translateY(600px) }
+		100%{ transform: rotate(360deg) translateX(800px) }	
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+
+</div>
+
+</body>
+</html>
+.

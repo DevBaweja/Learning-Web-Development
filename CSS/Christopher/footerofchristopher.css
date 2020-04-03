@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.footer,.footerbook{
+		position:absolute;
+}
+.footer{
+	top:13%;	
+}
+.footerbook{
+	top:150%;
+}
+.divimg{
+	float:left;
+	height:90vh;
+	width:33.33%;
+	box-sizing:border-box;
+	position:relative;
+
+}
+.divimg img{
+	height:100%;
+	width:100%;
+	float:left;
+}
+.divimg a:hover{
+		cursor:cell;
+}
+
+.divtext{
+	float:left;
+	width:100%;
+	height:90vh;
+	position:absolute;
+	opacity:0;
+	background-color:rgba(0,0,0,.55);
+}
+.title{
+		color:#FFF;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-size:28px;
+		font-family:"Courier New", Courier, monospace;
+		font-weight:550;
+		letter-spacing:3px;
+		position:absolute;
+		top:42.5%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		display:inline-table;
+		width:85%;
+		background-color:rgba(0,0,0,.7);
+		text-align:center;
+		
+}
+.view{
+		color:#FFF;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-size:16px;
+		font-family:"Lucida Console", Monaco, monospace;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		
+}
+.divtext:hover{
+	opacity:1;
+	transition:all 1s;
+}
+

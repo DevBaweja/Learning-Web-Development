@@ -1,0 +1,131 @@
+
+<html>
+<head>
+	<title> Quizz </title>
+	<link type="text/css" rel="stylesheet" href="Quizz.css" >
+    <script type="text/javascript" >
+	function init()
+	{
+	rightAns = new Array(5);
+	rightAns[0] = "Medicine or Physiology.";
+	rightAns[1] = "Diphu, Assam";
+	rightAns[2] = "Insects.";
+	rightAns[3] = "All the above.";
+	rightAns[4] = "The ultraviolet rays convert skin oil into Vitamin D.";
+	alert("Hi");
+	}
+
+		function result()
+		{
+			var score = 0;
+			for(var i=0;i<5;i++)
+				{
+					//alert(i);
+					var nm = "q"+(i+1);	
+					for(var j=0;j<4;j++)
+					{
+						//alert(j);
+						if(document.getElementsByName(nm).item(j).checked)
+						{
+							if(document.getElementsByName(nm).item(j).value == rightAns[i])
+							score += 10;
+								else
+							score -= 5;
+							
+							break;
+						}
+					}
+				}
+				alert("Score: "+score+"/50");
+		
+		}
+	</script>
+</head>
+
+<body onLoad="init()">
+
+	<h1> General Knowledge </h1>
+    
+    <marquee id="maq1" direction="down" behavior="slide">
+    <img src="../Image/quiz.jpg"> </marquee>
+<br>
+<hr>
+    
+    <ol>
+    	<li>
+         Nobel prize is awarded for which of the following disciplines:
+			<ul >
+                <li> <input type="radio" name="q1" value="Literature, peace and economics."/> Literature, peace and economics.</li>
+				<li> <input type="radio" name="q1" value="Medicine or Physiology."/> Medicine or Physiology.</li>
+				<li> <input type="radio" name="q1" value="Chemistry and Physics."/> Chemistry and Physics.</li>
+				<li> <input type="radio" name="q1" value="All the above."/> All the above.</li>
+            </ul>
+		</li>
+        
+        <li>
+        Garampani Sanctuary is locate in which of the following places:
+			<ul >
+            	<li> <input type="radio" name="q2" value="Junagarh, Gujarat"/> Junagarh, Gujarat</li>
+				<li> <input type="radio" name="q2" value="Kohima, Nagaland"/> Kohima, Nagaland</li>
+				<li> <input type="radio" name="q2" value="Diphu, Assam"/> Diphu, Assam</li>
+				<li> <input type="radio" name="q2" value="Gangtok, Sikkim"/> Gangtok, Sikkim</li>
+       		</ul>
+        </li>
+        
+        <li>
+        Entomology studies what?
+        	<ul >
+				<li> <input type="radio" name="q3" value="Behavior of human beings."/> Behavior of human beings.</li>
+				<li> <input type="radio" name="q3" value="Insects."/> Insects.</li>
+				<li> <input type="radio" name="q3" value="The origin and history of technical and scientific terms."/> The origin and history of technical and scientific terms.</li>
+				<li> <input type="radio" name="q3" value="The formation of rocks."/> The formation of rocks.</li>
+            </ul>
+        </li>
+        
+        <li>
+        Galileo was an astronomer who
+			<ul >
+				<li> <input type="radio" name="q4" value="Developed the telescope"/> Developed the telescope</li>
+				<li> <input type="radio" name="q4" value="Discovered four satellites of Jupiter"/> Discovered four satellites of Jupiter</li>
+				<li> <input type="radio" name="q4" value="Discovered that the movement of pendulum produces a regular time measurement."/> Discovered that the movement of pendulum produces a regular time measurement.</li>
+				<li> <input type="radio" name="q4" value="All the above."/> All the above.</li>
+            </ul>
+        </li>
+        
+        <li>
+        Sun exposure can bring about an improvement in health because of which of the following reasons:
+			<ul >
+				<li> <input type="radio" name="q5" value="The infrared light kills bacteria in the body."/> The infrared light kills bacteria in the body.</li>
+				<li> <input type="radio" name="q5" value="Resistance power increases."/> Resistance power increases.</li>
+				<li> <input type="radio" name="q5" value="The pigment cells in the skin get stimulated and produce a healthy tan."/> The pigment cells in the skin get stimulated and produce a healthy tan.</li>
+				<li> <input type="radio" name="q5" value="The ultraviolet rays convert skin oil into Vitamin D."/> The ultraviolet rays convert skin oil into Vitamin D.</li>
+            </ul>
+        </li>
+    </ol>
+     
+     <input type="button" value="Submit" onClick="result()"/>
+     <input type="button" value="Cancel" />
+     
+    <marquee id="maq2" direction="right" behavior="scroll" scrollamount="10"> 
+    THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME &nbsp;&nbsp;&nbsp;&nbsp;THANK YOU FOR YOUR TIME
+    </marquee>
+    <hr>
+   
+	<pre>   <pre id="acc"> Acknowledgement </pre>
+    I would like to express my special thanks of gratitude to my teacher
+    as well as our principal who gave me the golden opportunity 
+    to do this wonderful project on the topic,
+    which also helped me in doing a lot of Research and,
+    I came to know about so many new things I am really thankful to them.
+    <br>
+	This quiz is brought to you by
+	: Dev Baweja
+     --	 25/06/2019
+	</pre>
+<hr>
+
+
+
+
+</body>
+</html>

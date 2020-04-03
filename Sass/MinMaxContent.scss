@@ -1,0 +1,50 @@
+.container{
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #ddd;
+
+    display: grid;
+
+    //grid-template-rows: repeat(2 , 70px);
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content repeat(2,1fr) min-content;
+
+    grid-template-rows: repeat(2 , minmax(50px, min-content));
+
+     // 1 f ideally does equal spacing but then in extreme cases it uses min-content approach to fill it
+
+    .item{
+        padding: 10px;
+        color: white;
+        font-family: serif;
+        font-size: 18px;
+        
+
+        &--1{
+            background-color: orangered;
+        }
+        &--2{
+            background-color:yellowgreen;
+        }
+        &--3{
+            background-color:blueviolet ;
+        }
+        &--4{
+            background-color: palevioletred;
+        }
+        &--5{
+            background-color: royalblue ;
+        }
+        &--6{
+            background-color: goldenrod;
+        }
+        &--7{
+            background-color: crimson;
+        }
+        &--8{
+            background-color: darkslategray;
+        }
+
+
+    }
+}

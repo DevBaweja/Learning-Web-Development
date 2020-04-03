@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.feedback button{
+	float:left;
+	background-color:#fff;	
+	border:none;
+	margin:10px;
+	color:#ffd700;
+	font-size:40px;
+	
+}
+
+

@@ -1,0 +1,213 @@
+
+<html>
+<head>
+	<title> Quizz </title>
+	<link type="text/css" rel="stylesheet" href="Quizz.css" >
+    <script type="text/javascript" >
+	var Ques = new Array(5);
+	Ques[0] = " Nobel prize is awarded for which of the following disciplines:" ;
+	Ques[1] = "Garampani Sanctuary is locate in which of the following places:" ;
+	Ques[2] = "Entomology studies what?" ;
+	Ques[3] = "Galileo was an astronomer who" ;
+	Ques[4] = "Sun exposure can bring about an improvement in health because of which of the following reasons:" ;
+	
+	
+	var opt = new Array(5);
+	
+	opt[0] = new Array(4);
+	opt[1] = new Array(4);
+	opt[2] = new Array(4);
+	opt[3] = new Array(4);
+	opt[4] = new Array(4);
+	
+	
+	opt[0][0] = "Literature, peace and economics.";
+	opt[0][1] = "Medicine or Physiology.";
+	opt[0][2] = "Chemistry and Physics.";
+	opt[0][3] = "All the above.";
+	
+	opt[1][0] = "Junagarh, Gujarat";
+	opt[1][1] = "Kohima, Nagaland";
+	opt[1][2] = "Diphu, Assam";
+	opt[1][3] = "Gangtok, Sikkim";
+	
+	opt[2][0] = "Behavior of human beings.";
+	opt[2][1] = "Insects.";
+	opt[2][2] = "The origin and history of technical and scientific terms.";
+	opt[2][3] = "The formation of rocks.";
+	
+	opt[3][0] = "Developed the telescope";
+	opt[3][1] = "Discovered four satellites of Jupiter";
+	opt[3][2] = "Discovered that the movement of pendulum produces a regular time measurement.";
+	opt[3][3] = " All the above.";
+	
+	opt[4][0] = "The infrared light kills bacteria in the body.";
+	opt[4][1] = "Resistance power increases.";
+	opt[4][2] = "The pigment cells in the skin get stimulated and produce a healthy tan.";
+	opt[4][3] = "The ultraviolet rays convert skin oil into Vitamin D.";
+	
+	
+	var rightAns = new Array(5);
+	rightAns[0] = "Medicine or Physiology.";
+	rightAns[1] = "Diphu, Assam";
+	rightAns[2] = "Insects.";
+	rightAns[3] = "All the above.";
+	rightAns[4] = "The ultraviolet rays convert skin oil into Vitamin D.";
+	
+	var yourans = new Array(5);
+var q=0;
+var id;
+	function start()
+	{
+		quiz();
+		id = window.setInterval("quiz()",1000);
+	}
+	function quiz()
+	{
+	
+	if(q<Ques.length)
+		{
+		document.getElementById('divQuiz').innerHTML = "";
+		
+				document.getElementById('divQuiz').innerHTML += (q+1)+". ";
+				document.getElementById('divQuiz').innerHTML += Ques[q];
+				document.getElementById('divQuiz').innerHTML += "<br>";
+				var nm='opt'+(q+1);
+				for(var p = 0;p < opt[q].length ; p++)
+				{	
+					document.getElementById('divQuiz').innerHTML += "<br><input type='radio' name='"+nm+"' value='"+opt[q][p]+"' /> "+opt[q][p];
+					
+					//if(document.getElementsByName(nm).item(j).checked)
+					yourans[q] = opt[q][p];
+				//	document.getElementById('divQuiz').innerHTML += opt[q][p];	 
+				}
+				document.getElementById('divQuiz').innerHTML += "<hr>";	
+					//alert(q);	
+							
+				q++;
+				
+					
+		}
+		else
+		{
+			window.clearInterval(id); //stop further calling
+			cleardiv();	
+		}
+	}
+	function cleardiv()
+	{
+		
+		document.getElementById('divQuiz').innerHTML = "";
+		document.getElementById('divQuiz').innerHTML += "<h1>Finished</h1>"
+		document.getElementById('divQuiz').innerHTML += "<h2> Thank You For Yours Time </h2>"
+		 resultfun();
+	}
+	
+		function resultfun()
+		{
+			alert("go");
+			var score = 0;
+			for(var i=0;i<5;i++)
+			{
+							if(yourans[i] == rightAns[i])
+								score += 10;
+							else
+								score -= 5;
+					
+			}
+				alert("Score: "+score+"/50");
+		
+		}
+	</script>
+</head>
+
+<body>
+
+	<h1> General Knowledge </h1>
+    
+    <marquee id="maq1" direction="down" behavior="slide">
+    <img src="../Image/quiz.jpg"> </marquee>
+<br>
+<hr>
+  <div id="divQuiz"> 
+  </div>
+  
+     <input type="button" value="Start" onClick="start()" />
+     <input type="button" value="Cancel" />
+    
+   <!-- <ol>
+    	<li>
+         Nobel prize is awarded for which of the following disciplines:
+			<ul >
+                <li> <input type="radio" name="q1" value="Literature, peace and economics."/> </li>
+				<li> <input type="radio" name="q1" value="Medicine or Physiology."/> </li>
+				<li> <input type="radio" name="q1" value="Chemistry and Physics."/></li>
+				<li> <input type="radio" name="q1" value="All the above."/> </li>
+            </ul>
+		</li>
+        
+        <li>
+        Garampani Sanctuary is locate in which of the following places:
+			<ul >
+            	<li> <input type="radio" name="q2" value="Junagarh, Gujarat"/> </li>
+				<li> <input type="radio" name="q2" value="Kohima, Nagaland"/> </li>
+				<li> <input type="radio" name="q2" value="Diphu, Assam"/> </li>
+				<li> <input type="radio" name="q2" value="Gangtok, Sikkim"/> </li>
+       		</ul>
+        </li>
+        
+        <li>
+        Entomology studies what?
+        	<ul >
+				<li> <input type="radio" name="q3" value="Behavior of human beings."/> </li>
+				<li> <input type="radio" name="q3" value="Insects."/> </li>
+				<li> <input type="radio" name="q3" value="The origin and history of technical and scientific terms."/> </li>
+				<li> <input type="radio" name="q3" value="The formation of rocks."/> </li>
+            </ul>
+        </li>
+        
+        <li>
+        Galileo was an astronomer who
+			<ul >
+				<li> <input type="radio" name="q4" value="Developed the telescope"/> </li>
+				<li> <input type="radio" name="q4" value="Discovered four satellites of Jupiter"/> </li>
+				<li> <input type="radio" name="q4" value="Discovered that the movement of pendulum produces a regular time measurement."/> </li>
+				<li> <input type="radio" name="q4" value="All the above."/></li>
+            </ul>
+        </li>
+        
+        <li>
+        Sun exposure can bring about an improvement in health because of which of the following reasons:
+			<ul >
+				<li> <input type="radio" name="q5" value="The infrared light kills bacteria in the body."/> </li>
+				<li> <input type="radio" name="q5" value="Resistance power increases."/> </li>
+				<li> <input type="radio" name="q5" value="The pigment cells in the skin get stimulated and produce a healthy tan."/> </li>
+				<li> <input type="radio" name="q5" value="The ultraviolet rays convert skin oil into Vitamin D."/> </li>
+            </ul>
+        </li>
+    </ol>
+		-->
+     
+    <marquee id="maq2" direction="right" behavior="scroll" scrollamount="10"> 
+    THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME&nbsp;&nbsp;&nbsp;&nbsp; THANK YOU FOR YOUR TIME &nbsp;&nbsp;&nbsp;&nbsp;THANK YOU FOR YOUR TIME
+    </marquee>
+    <hr>
+   
+	<pre>   <pre id="acc"> Acknowledgement </pre>
+    I would like to express my special thanks of gratitude to my teacher
+    as well as our principal who gave me the golden opportunity 
+    to do this wonderful project on the topic,
+    which also helped me in doing a lot of Research and,
+    I came to know about so many new things I am really thankful to them.
+    <br>
+	This quiz is brought to you by
+	: Dev Baweja
+     --	 25/06/2019
+	</pre>
+<hr>
+
+
+
+
+</body>
+</html>
